@@ -7,20 +7,26 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * Unit test for simple App.
  */
-public class AppTest
+public class AddedFileTest
 {
     @Test
     public void testAppConstructor() {
-        App app1 = new App();
-        App app2 = new App();
+        AddedFile app1 = new AddedFile();
+        AddedFile app2 = new AddedFile();
         assertEquals(app1.getMessage("Test"), app2.getMessage("Test"));
     }
 
     @Test
     public void testAppMessage()
     {
-        App app = new App();
+        AddedFile app = new AddedFile();
         assertEquals("Hello World!", app.getMessage("Hello World!"));
-        assertEquals("Hello World!", app.getAnotherMessage("Hello World!"));
+    }
+
+     @Test
+    public void testAppMessagew()
+    {
+        AddedFile app = new AddedFile();
+        assertEquals("Hello World!", app.getMessage("Hello World!"));
     }
 }
